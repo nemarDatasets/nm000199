@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Learning from label proportions for a visual matrix speller (ERP)",
+  "description": "This dataset comprises event-related potential (ERP) recordings from 13 healthy subjects performing a visual P300 speller task using a 6×7 character matrix. The study introduces learning from label proportions (LLP), an unsupervised classification approach that enables calibration-free brain-computer interface operation by exploiting known target/non-target stimulus ratios. Subjects completed three copy-spelling sessions without prior calibration, achieving 84.5% character accuracy, demonstrating the feasibility of LLP for practical BCI applications.",
+  "methods_description": "EEG data were acquired at 1000 Hz from 31 channels using a BrainAmp DC amplifier with passive Ag/AgCl electrodes in a standard 10-20 montage (nose reference, FCz ground). Subjects performed a visual copy-spelling task using a 6×7 grid with two stimulus sequences having different target/non-target ratios (3:8 and 2:18). Each character required 68 highlighting events. The LLP classifier exploited these known proportions to reconstruct mean target and non-target responses without labeled training data. Auxiliary channels recorded EOG, pulse, respiration, and EMG. Sessions lasted approximately 3 hours including setup.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "David Hübner": {
       "orcid": "0000-0003-4085-9154"
@@ -11,6 +16,31 @@
     "Michael Tangermann": {},
     "Pieter-Jan Kindermans": {}
   },
+  "keywords": [
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "unsupervised learning"
+    },
+    {
+      "term": "calibration-free BCI"
+    },
+    {
+      "term": "visual speller"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1371/journal.pone.0175856",
@@ -43,12 +73,12 @@
       "funder_name": "Special Research Fund from Ghent University"
     },
     {
-      "funder_name": "DFG",
+      "funder_name": "German Research Foundation (DFG)",
       "award_number": "EXC 1086",
       "award_title": "BrainLinks-BrainTools Cluster of Excellence"
     },
     {
-      "funder_name": "bwHPC",
+      "funder_name": "bwHPC initiative",
       "award_number": "INST 39/963-1 FUGG"
     },
     {
@@ -66,14 +96,11 @@
       "award_title": "BK21 program"
     }
   ],
-  "title": "Learning from label proportions for a visual matrix speller (ERP)",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "5.5 GB (343 files)"
   ],
@@ -85,33 +112,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises EEG recordings from 13 healthy subjects performing a visual P300 speller task using a 6×7 character matrix. The study introduces learning from label proportions (LLP), an unsupervised classification approach that eliminates the need for subject-specific calibration data in brain-computer interfaces. Subjects completed three copy-spelling sessions spelling a German pangram sentence, with ERP responses recorded at 1000 Hz from 31 EEG channels. The dataset achieved 84.5% online spelling accuracy without prior calibration, demonstrating the feasibility of calibrationless BCI operation.",
-  "methods_description": "EEG data were acquired at 1000 Hz sampling rate from 31 channels using a BrainAmp DC amplifier with passive Ag/AgCl electrodes in a standard 10-20 montage (reference: nose, ground: FCz). Subjects performed a visual copy-spelling task using a 6×7 character grid with two stimulus sequences having different target/non-target ratios (3/8 and 2/18). Each character required 68 highlighting events across 4 sequences of length 8 and 2 sequences of length 18. The learning from label proportions (LLP) classifier exploited known class proportions to reconstruct mean target and non-target ERP responses without labeled training data. Trials were extracted from -0.2 to 0.7 s post-stimulus onset (SOA: 250 ms, stimulus duration: 100 ms). Five-fold chronological cross-validation was applied for evaluation.",
-  "keywords": [
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "P300"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "unsupervised learning"
-    },
-    {
-      "term": "calibrationless BCI"
-    },
-    {
-      "term": "visual speller"
-    }
-  ],
-  "source_hash": "76ae7bd4939c4f459b8dcd3464ac443bbaefccba2c0724c124e0822b724be47e"
+  "source_hash": "d485429a7e20651039fa70e9fa63be0aa605d898eea3a5678ba38c7bf747ce3a"
 }
