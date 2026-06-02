@@ -1,56 +1,58 @@
 {
-	"Name": "Learning from label proportions for a visual matrix speller (ERP)",
-	"BIDSVersion": "1.9.0",
-	"HEDVersion": "8.4.0",
-	"DatasetType": "derivative",
-	"License": "CC-BY-4.0",
-	"Authors": [
-		"David H\u00fcbner",
-		"Thibault Verhoeven",
-		"Konstantin Schmid",
-		"Klaus-Robert M\u00fcller",
-		"Michael Tangermann",
-		"Pieter-Jan Kindermans"
-	],
-	"Funding": [
-		"BrainLinks-BrainTools Cluster of Excellence funded by the German Research Foundation (DFG), grant number EXC 1086",
-		"bwHPC initiative, grant INST 39/963-1 FUGG",
-		"European Union's Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 657679",
-		"Special Research Fund from Ghent University",
-		"BK21 program funded by Korean National Research Foundation grant No. 2012-005741"
-	],
-	"EthicsApprovals": [
-		"Ethics Committee of the University Medical Center Freiburg",
-		"Declaration of Helsinki"
-	],
-	"ReferencesAndLinks": [
-		"http://doi.org/10.5281/zenodo.192684"
-	],
-	"GeneratedBy": [
-		{
-			"CodeURL": "https://github.com/NeuroTechX/moabb",
-			"Name": "moabb",
-			"Description": "Mother of All BCI Benchmarks",
-			"Version": "1.5.0"
-		}
-	],
-	"SourceDatasets": [
-		{
-			"DOI": "10.1371/journal.pone.0175856",
-			"URL": "http://doi.org/10.5281/zenodo.192684"
-		}
-	],
-	"Keywords": [
-		"brain-computer interface",
-		"BCI",
-		"event-related potentials",
-		"ERP",
-		"P300",
-		"learning from label proportions",
-		"LLP",
-		"unsupervised learning",
-		"calibrationless",
-		"visual speller"
-	],
-	"PublicationYear": 2017
+  "Name": "Learning from label proportions for a visual matrix speller (ERP)",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "David Hübner",
+    "Thibault Verhoeven",
+    "Konstantin Schmid",
+    "Klaus-Robert Müller",
+    "Michael Tangermann",
+    "Pieter-Jan Kindermans"
+  ],
+  "Funding": [
+    "BrainLinks-BrainTools Cluster of Excellence funded by the German Research Foundation (DFG), grant number EXC 1086",
+    "bwHPC initiative, grant INST 39/963-1 FUGG",
+    "European Union's Horizon 2020 research and innovation programme under the Marie Sklodowska-Curie grant agreement No 657679",
+    "Special Research Fund from Ghent University",
+    "BK21 program funded by Korean National Research Foundation grant No. 2012-005741"
+  ],
+  "EthicsApprovals": [
+    "Ethics Committee of the University Medical Center Freiburg",
+    "Declaration of Helsinki"
+  ],
+  "ReferencesAndLinks": [
+    "http://doi.org/10.5281/zenodo.192684"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.5.0"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.1371/journal.pone.0175856",
+      "URL": "http://doi.org/10.5281/zenodo.192684"
+    }
+  ],
+  "Keywords": [
+    "brain-computer interface",
+    "BCI",
+    "event-related potentials",
+    "ERP",
+    "P300",
+    "learning from label proportions",
+    "LLP",
+    "unsupervised learning",
+    "calibrationless",
+    "visual speller"
+  ],
+  "PublicationYear": 2017,
+  "DatasetDOI": "10.82901/nemar.nm000199",
+  "Version": "1.0.0"
 }
