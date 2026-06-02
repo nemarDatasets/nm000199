@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000199-blue)](https://doi.org/10.82901/nemar.nm000199)
+
 # Learning from label proportions for a visual matrix speller (ERP)
 
 Learning from label proportions for a visual matrix speller (ERP) dataset from Hübner et al 2017 [1]_.
