@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Learning from label proportions for a visual matrix speller (ERP)",
-  "description": "This dataset comprises event-related potential (ERP) recordings from 13 healthy subjects performing a visual P300 speller task using a 6×7 character matrix. The study introduces learning from label proportions (LLP), an unsupervised classification approach that enables calibration-free brain-computer interface operation by exploiting known target/non-target stimulus ratios. Subjects completed three copy-spelling sessions without prior calibration, achieving 84.5% character accuracy, demonstrating the feasibility of LLP for practical BCI applications.",
-  "methods_description": "EEG data were acquired at 1000 Hz from 31 channels using a BrainAmp DC amplifier with passive Ag/AgCl electrodes in a standard 10-20 montage (nose reference, FCz ground). Subjects performed a visual copy-spelling task using a 6×7 grid with two stimulus sequences having different target/non-target ratios (3:8 and 2:18). Each character required 68 highlighting events. The LLP classifier exploited these known proportions to reconstruct mean target and non-target responses without labeled training data. Auxiliary channels recorded EOG, pulse, respiration, and EMG. Sessions lasted approximately 3 hours including setup.",
+  "description": "This dataset comprises electroencephalographic recordings from 13 healthy subjects performing a visual P300-based brain-computer interface speller task using a 6×7 character matrix. The study investigates learning from label proportions (LLP), an unsupervised classification approach that enables calibrationless BCI operation by exploiting known target/non-target stimulus ratios. Subjects completed three copy-spelling sessions without prior calibration, achieving 84.5% character-level accuracy, demonstrating the feasibility of unsupervised ERP-based BCI systems.",
+  "methods_description": "EEG data were acquired at 1000 Hz from 31 channels using a BrainAmp DC amplifier with passive Ag/AgCl electrodes in a standard 10-20 montage (nose reference, FCz ground). Subjects performed a visual copy-spelling task using a 6×7 grid with two stimulus sequences featuring different target/non-target ratios (3/8 and 2/18). Each character required 68 highlighting events across 4 sequences of length 8 and 2 sequences of length 18. The LLP classifier was reset per sentence and retrained after each character. Sessions lasted approximately 3 hours including electrode setup.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -20,10 +20,14 @@
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "event-related potentials"
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
       "term": "P300"
@@ -32,10 +36,10 @@
       "term": "EEG"
     },
     {
-      "term": "unsupervised learning"
+      "term": "learning from label proportions"
     },
     {
-      "term": "calibration-free BCI"
+      "term": "unsupervised learning"
     },
     {
       "term": "visual speller"
@@ -58,14 +62,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000199",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000199",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -73,12 +77,12 @@
       "funder_name": "Special Research Fund from Ghent University"
     },
     {
-      "funder_name": "German Research Foundation (DFG)",
+      "funder_name": "DFG",
       "award_number": "EXC 1086",
       "award_title": "BrainLinks-BrainTools Cluster of Excellence"
     },
     {
-      "funder_name": "bwHPC initiative",
+      "funder_name": "bwHPC",
       "award_number": "INST 39/963-1 FUGG"
     },
     {
@@ -102,15 +106,16 @@
     "eeg"
   ],
   "sizes": [
-    "5.5 GB (343 files)"
+    "5.5 GB (685 files)"
   ],
   "formats": [
     ".bdf",
     ".json",
     ".md",
     ".tsv",
+    ".vhdr",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "d485429a7e20651039fa70e9fa63be0aa605d898eea3a5678ba38c7bf747ce3a"
+  "source_hash": "5a11ea0ab5e3a6bd9017445bd3759f591aed9d0bacf608f1aad57022c937fcca"
 }
