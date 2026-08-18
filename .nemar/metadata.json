@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Learning from label proportions for a visual matrix speller (ERP)",
-  "description": "This dataset comprises electroencephalographic recordings from 13 healthy subjects performing a visual P300-based brain-computer interface speller task using a 6×7 character matrix. The study investigates learning from label proportions (LLP), an unsupervised classification approach that enables calibrationless BCI operation by exploiting known target/non-target stimulus ratios. Subjects completed three copy-spelling sessions without prior calibration, achieving 84.5% character-level accuracy, demonstrating the feasibility of unsupervised ERP-based BCI systems.",
-  "methods_description": "EEG data were acquired at 1000 Hz from 31 channels using a BrainAmp DC amplifier with passive Ag/AgCl electrodes in a standard 10-20 montage (nose reference, FCz ground). Subjects performed a visual copy-spelling task using a 6×7 grid with two stimulus sequences featuring different target/non-target ratios (3/8 and 2/18). Each character required 68 highlighting events across 4 sequences of length 8 and 2 sequences of length 18. The LLP classifier was reset per sentence and retrained after each character. Sessions lasted approximately 3 hours including electrode setup.",
+  "description": "This dataset comprises event-related potential (ERP) recordings from 13 healthy subjects performing a visual matrix speller task using a calibrationless brain-computer interface approach. The study introduces learning from label proportions (LLP), an unsupervised classification method that exploits known target/non-target stimulus ratios to enable online BCI operation without prior calibration. Subjects performed copy-spelling tasks using a 6×7 character grid across three sessions, achieving 84.5% character accuracy without labeled training data.",
+  "methods_description": "EEG data were acquired at 1000 Hz from 31 channels using a BrainAmp DC amplifier with passive Ag/AgCl electrodes in a standard 10-20 montage (reference: nose, ground: FCz). Subjects performed a visual P300 speller task with a 6×7 grid, spelling a German pangram sentence three times across three sessions. Two stimulus sequences with different target/non-target ratios were employed: sequence 1 (3 targets/8 stimuli) and sequence 2 (2 targets/18 stimuli). Stimulus onset asynchrony was 250 ms with 100 ms stimulus duration. The LLP classifier was trained online using known class proportions without explicit trial labels.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -36,13 +36,13 @@
       "term": "EEG"
     },
     {
-      "term": "learning from label proportions"
-    },
-    {
       "term": "unsupervised learning"
     },
     {
       "term": "visual speller"
+    },
+    {
+      "term": "learning from label proportions"
     }
   ],
   "related_identifiers": [
@@ -88,7 +88,7 @@
     {
       "funder_name": "European Union",
       "award_number": "657679",
-      "award_title": "Horizon 2020 Marie Sklodowska-Curie grant"
+      "award_title": "Marie Sklodowska-Curie grant (Horizon 2020)"
     },
     {
       "funder_name": "Ghent University",
@@ -117,5 +117,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "5a11ea0ab5e3a6bd9017445bd3759f591aed9d0bacf608f1aad57022c937fcca"
+  "source_hash": "7fbd18f1c01784f59b56872497a768d5fc38e118ab69014cfb05b9046214d138"
 }
