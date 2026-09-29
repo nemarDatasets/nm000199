@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Learning from label proportions for a visual matrix speller (ERP)",
-  "description": "This dataset comprises event-related potential (ERP) recordings from 13 healthy subjects performing a visual matrix speller task using a calibrationless brain-computer interface approach. The study introduces learning from label proportions (LLP), an unsupervised classification method that exploits known target/non-target stimulus ratios to enable online BCI operation without prior calibration. Subjects performed copy-spelling tasks using a 6×7 character grid across three sessions, achieving 84.5% character accuracy without labeled training data.",
-  "methods_description": "EEG data were acquired at 1000 Hz from 31 channels using a BrainAmp DC amplifier with passive Ag/AgCl electrodes in a standard 10-20 montage (reference: nose, ground: FCz). Subjects performed a visual P300 speller task with a 6×7 grid, spelling a German pangram sentence three times across three sessions. Two stimulus sequences with different target/non-target ratios were employed: sequence 1 (3 targets/8 stimuli) and sequence 2 (2 targets/18 stimuli). Stimulus onset asynchrony was 250 ms with 100 ms stimulus duration. The LLP classifier was trained online using known class proportions without explicit trial labels.",
+  "description": "EEG recordings from 13 healthy participants performing an online copy-spelling task with a visual 6x7 matrix ERP speller. The speller was designed for a learning from label proportions (LLP) classifier, an unsupervised, calibration-free approach that reconstructs target and non-target responses from known class proportions across stimulus sequences. The dataset supports evaluation of calibrationless P300-based brain-computer interfaces, with 31 EEG channels recorded at 1000 Hz.",
+  "methods_description": "Participants copy-spelled a German pangram three times using a visual ERP speller with a 6x7 grid and a 250 ms stimulus onset asynchrony. Two stimulus sequences with different target/non-target ratios (3/8 and 2/18) were used, giving 68 highlighting events per character. EEG was recorded with a BrainAmp DC amplifier and 31 passive Ag/AgCl electrodes (EasyCap), nose reference, at 1000 Hz. The LLP classifier was reset at the start of each sentence and retrained after each character.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -20,29 +20,29 @@
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
       "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "P300"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "unsupervised learning"
+      "term": "learning from label proportions"
     },
     {
       "term": "visual speller"
     },
     {
-      "term": "learning from label proportions"
+      "term": "unsupervised learning"
+    },
+    {
+      "term": "calibrationless BCI"
     }
   ],
   "related_identifiers": [
@@ -54,7 +54,7 @@
     {
       "identifier": "10.5281/zenodo.192684",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDerivedFrom"
     },
     {
       "identifier": "https://github.com/nemarDatasets/nm000199",
@@ -70,6 +70,11 @@
       "identifier": "https://nemar.org/dataset/nm000199",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
@@ -77,18 +82,17 @@
       "funder_name": "Special Research Fund from Ghent University"
     },
     {
-      "funder_name": "DFG",
+      "funder_name": "German Research Foundation (DFG)",
       "award_number": "EXC 1086",
       "award_title": "BrainLinks-BrainTools Cluster of Excellence"
     },
     {
-      "funder_name": "bwHPC",
+      "funder_name": "bwHPC initiative",
       "award_number": "INST 39/963-1 FUGG"
     },
     {
-      "funder_name": "European Union",
-      "award_number": "657679",
-      "award_title": "Marie Sklodowska-Curie grant (Horizon 2020)"
+      "funder_name": "European Union Horizon 2020 (Marie Sklodowska-Curie)",
+      "award_number": "657679"
     },
     {
       "funder_name": "Ghent University",
@@ -106,7 +110,7 @@
     "eeg"
   ],
   "sizes": [
-    "5.5 GB (685 files)"
+    "5.14 GB (685 files)"
   ],
   "formats": [
     ".bdf",
