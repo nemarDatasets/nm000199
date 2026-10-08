@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Learning from label proportions for a visual matrix speller (ERP)",
-  "description": "EEG recordings from 13 healthy participants performing an online copy-spelling task with a visual 6x7 matrix ERP speller. The speller was designed for a learning from label proportions (LLP) classifier, an unsupervised, calibration-free approach that reconstructs target and non-target responses from known class proportions across stimulus sequences. The dataset supports evaluation of calibrationless P300-based brain-computer interfaces, with 31 EEG channels recorded at 1000 Hz.",
-  "methods_description": "Participants copy-spelled a German pangram three times using a visual ERP speller with a 6x7 grid and a 250 ms stimulus onset asynchrony. Two stimulus sequences with different target/non-target ratios (3/8 and 2/18) were used, giving 68 highlighting events per character. EEG was recorded with a BrainAmp DC amplifier and 31 passive Ag/AgCl electrodes (EasyCap), nose reference, at 1000 Hz. The LLP classifier was reset at the start of each sentence and retrained after each character.",
+  "description": "EEG recordings from 13 healthy participants performing an online copy-spelling task with a visual 6x7 matrix ERP speller. The speller was designed for learning from label proportions (LLP), an unsupervised, calibrationless classification approach for ERP-based brain-computer interfaces. Two stimulus sequences with different target/non-target ratios allowed the classifier to reconstruct mean target and non-target responses without labeled data. In the original study, 84.5% of characters were spelled correctly on average without prior calibration.",
+  "methods_description": "Participants copy-spelled a German pangram three times using a 6x7 visual matrix speller with 250 ms SOA and salient highlighting. Each character comprised 68 highlighting events (4 sequences of 8 stimuli and 2 sequences of 18). EEG was recorded with a BrainAmp DC amplifier and 31 passive Ag/AgCl electrodes at 1000 Hz, with a nose reference and FCz ground. EOG, pulse and respiration were recorded as auxiliary channels. The LLP classifier was reset at the start of each sentence and retrained after each character.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -91,8 +91,9 @@
       "award_number": "INST 39/963-1 FUGG"
     },
     {
-      "funder_name": "European Union Horizon 2020 (Marie Sklodowska-Curie)",
-      "award_number": "657679"
+      "funder_name": "European Union's Horizon 2020 research and innovation programme",
+      "award_number": "657679",
+      "award_title": "Marie Sklodowska-Curie grant agreement"
     },
     {
       "funder_name": "Ghent University",
@@ -121,5 +122,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "7fbd18f1c01784f59b56872497a768d5fc38e118ab69014cfb05b9046214d138"
+  "source_hash": "0308cba22dec65633137bc57e653402c51b9ed68006ef536e46f47cb70ae6577"
 }
