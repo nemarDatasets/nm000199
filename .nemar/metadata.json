@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Learning from label proportions for a visual matrix speller (ERP)",
-  "description": "EEG recordings from 13 healthy participants performing an online copy-spelling task with a visual 6x7 matrix ERP speller. The speller was designed for learning from label proportions (LLP), an unsupervised, calibrationless classification approach for ERP-based brain-computer interfaces. Two stimulus sequences with different target/non-target ratios allowed the classifier to reconstruct mean target and non-target responses without labeled data. In the original study, 84.5% of characters were spelled correctly on average without prior calibration.",
-  "methods_description": "Participants copy-spelled a German pangram three times using a 6x7 visual matrix speller with 250 ms SOA and salient highlighting. Each character comprised 68 highlighting events (4 sequences of 8 stimuli and 2 sequences of 18). EEG was recorded with a BrainAmp DC amplifier and 31 passive Ag/AgCl electrodes at 1000 Hz, with a nose reference and FCz ground. EOG, pulse and respiration were recorded as auxiliary channels. The LLP classifier was reset at the start of each sentence and retrained after each character.",
+  "description": "EEG recordings from 13 healthy participants performing an online copy-spelling task with a visual 6x7 matrix ERP speller. The speller was designed for learning from label proportions (LLP), an unsupervised, calibration-free classification approach for ERP-based brain-computer interfaces. Two stimulus sequences with different target/non-target ratios allowed target and non-target responses to be estimated without labeled data. On average, 84.5% of characters were spelled correctly without prior calibration.",
+  "methods_description": "Participants spelled a German pangram sentence three times using a visual ERP speller with a 6x7 grid and a 250 ms stimulus onset asynchrony. Each character comprised 68 highlighting events from two sequence types (3 targets in 8 stimuli, and 2 targets in 18 stimuli). EEG was recorded with a BrainAmp DC amplifier and 31 passive Ag/AgCl electrodes in an EasyCap, sampled at 1000 Hz with a nose reference. The LLP classifier was reset at the start of each sentence and retrained after each character.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -18,14 +18,12 @@
   },
   "keywords": [
     {
+      "term": "EEG"
+    },
+    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
       "term": "Event-Related Potentials, P300",
@@ -40,9 +38,6 @@
     },
     {
       "term": "unsupervised learning"
-    },
-    {
-      "term": "calibrationless BCI"
     }
   ],
   "related_identifiers": [
@@ -91,9 +86,8 @@
       "award_number": "INST 39/963-1 FUGG"
     },
     {
-      "funder_name": "European Union's Horizon 2020 research and innovation programme",
-      "award_number": "657679",
-      "award_title": "Marie Sklodowska-Curie grant agreement"
+      "funder_name": "European Union Horizon 2020 Marie Sklodowska-Curie",
+      "award_number": "657679"
     },
     {
       "funder_name": "Ghent University",
@@ -111,16 +105,18 @@
     "eeg"
   ],
   "sizes": [
-    "5.14 GB (685 files)"
+    "9.42 GB (1369 files)"
   ],
   "formats": [
     ".bdf",
+    ".eeg",
     ".json",
     ".md",
     ".tsv",
     ".vhdr",
+    ".vmrk",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "0308cba22dec65633137bc57e653402c51b9ed68006ef536e46f47cb70ae6577"
+  "source_hash": "2b44f199f01c4912693bf2878a76af36c436ee804ec5eebe2569f6f7f3f77faf"
 }
