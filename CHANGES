@@ -1,0 +1,5 @@
+1.0.4 2026-10-16
+  - sourcedata: added the data (.eeg) and marker (.vmrk) file each header names (DataFile, MarkerFile) for the 342 BrainVision headers (subjectXX/matrixSpeller_Block*_Run*.vhdr) already in sourcedata/
+    (684 files, 4,595,608,312 bytes), unchanged from the Zenodo release 10.5281/zenodo.5831826 (members of the per-subject archives subjectXX.zip).
+    The MOABB loader (moabb.datasets.Huebner2017) needs them to read a recording from this deposit.
+    No existing file changed; the BIDS tree is unchanged.
